@@ -1,10 +1,69 @@
----
-title: 常見問題
-layout: ./app/layout.ejs
-engine: ejs
-current: Question
----
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>常見問題</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  <!--Swiper CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <div class="logo-wrap">
+        <a href="./index.html" class="logo d-f-center pd-20">
+          <i class="fa-solid fa-leaf mr-8"></i>
+          Plant's World
+        </a>
+        <a href="#" class="ham-show">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </a>
+      </div>
+
+      <ul class="header-nav d-flex mb-20">
+        <li class="mr-20">
+          <a href="./about.html">關於我們</a>
+        </li>
+        <li class="mr-20">
+          <a href="./products.html">購買植栽</a>
+        </li>
+        <li class="mr-20">
+          <a href="./article.html">植物文章</a>
+        </li>
+        <li>
+          <a href="./question.html">常見問題</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 漢堡選單 -->
+  <div class="container">
+    <ul class="ham-dropDown pd-20">
+      <li>
+        <a href="./about.html">關於我們</a>
+      </li>
+      <li>
+        <a href="./products.html">購買植栽</a>
+      </li>
+      <li>
+        <a href="./article.html">植物文章</a>
+      </li>
+      <li>
+        <a href="./question.html">常見問題</a>
+      </li>
+    </ul>
+  </div>
+
+  
 <div class="title-bg d-f-center pd-20">
     <h2 class="title">常見問題</h2>
 </div>
@@ -76,3 +135,23 @@ current: Question
         </li>
     </ul>
 </div>
+
+  <footer class="pd-20">
+    <p>Copyright © Plant's World All Rights Reserved. <br>
+      Designed by Phoebe Du
+    </p>
+  </footer>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+   <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
