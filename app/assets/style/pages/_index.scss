@@ -1,0 +1,198 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper {
+    width: 100%;
+    height: calc(100vh - 265px);
+    @include pad{
+        height: calc(100vh - 275px);
+    }
+    @include mobile{
+        height: calc(100vh - 70px);
+    }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: white;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.banner-title{
+    color: $color-primary;
+    text-align: center;
+
+    @include mobile{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        @include pad{
+            font-size: 40px;
+        }
+        @include mobile{
+            font-size: 26px;
+        }
+        i{
+            display: contents;
+        }
+    }
+}
+
+.welcome{
+    width: 85%;
+    @include mobile{
+        width: 100%;
+    }
+    p{
+        color: $color-gray;
+        text-align: center;
+    }
+}
+
+//盆栽系列
+.type{
+    h2{
+        text-align: center;
+    }
+}
+.type-items{
+    justify-content: space-between;
+    @include pad{
+        display: block;
+    }
+    li{
+        width: 32.33%;
+     
+        &:hover{
+            opacity: 0.8;
+        }
+        @include pad{
+            width: 100%;
+            margin-bottom: 20px;
+        }  
+        h3{
+            border-radius: 0px 0px 4px 4px; 
+        }
+    }
+    h3{
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 2px 6px #00000029;
+    }
+}
+.type-img-01, .type-img-02, .type-img-03{
+    height: 270px;
+    border-radius: 4px 4px 0px 0px; 
+    @include mobile{
+        height: 180px;
+    }
+}
+.type-img-01{
+    background-image: url('https://images.unsplash.com/photo-1566836610593-62a64888a216?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1377&q=80');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.type-img-02{
+    background-image: url('https://images.unsplash.com/photo-1591382696684-38c427c7547a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.type-img-03{
+    background-image: url('https://images.unsplash.com/photo-1627271296187-5988df85a2c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//風格
+.style{
+    background-color: #9FB3AE;
+    opacity: 0.8;
+    h2{
+        color: #555E50;
+    }
+    p{
+        color: white;
+    }
+}
+
+
+//選擇
+.choose{
+
+    li{
+        align-items: center;
+        justify-content: space-between;
+        &:nth-child(2), &:nth-child(4){
+            flex-direction: row-reverse;
+        }
+        @include mobile{
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    img{
+        width: 50%;
+        height: 300px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+        @include pad{
+            height: 320px;
+        }
+        @include mobile{
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+.choose-content{
+    width: 48%;
+    padding: 0 40px;
+    @include pad{
+        padding: 0 10px;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}

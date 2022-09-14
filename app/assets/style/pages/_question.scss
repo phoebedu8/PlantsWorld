@@ -1,0 +1,37 @@
+.question-content{
+    width: 80%;
+    margin: 20px auto;
+    @include pad{
+        width: 90%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+.question{
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: $color-primary;
+    padding: 20px 40px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    h6{
+        font-size: 18px;
+    }
+}
+.answer{
+    display: none;
+    color: $color-darkGray;
+    padding: 20px 40px;
+    border: 1px solid $color-primary;
+    border-radius: 0px 0px 5px 5px;
+    p{
+        font-size: 18px;
+    }
+}
+
+// 同時有 .answer.active 就會打開
+.answer.active{
+    display: block;
+}

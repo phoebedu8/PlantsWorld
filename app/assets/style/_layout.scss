@@ -1,0 +1,82 @@
+//header
+.logo-wrap{
+    @include mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: $color-primary;
+    @include pad{
+        font-size: 22px;
+    }
+    @include mobile{
+        font-size: 20px;
+    }
+}
+.ham-show{
+    color: $color-primary;
+    display: none;
+    @include mobile{
+        display: flex;
+    }
+}
+.header-nav{
+    justify-content: center;
+    @include mobile{
+        display: none;
+    }
+    li{
+        @include pad{
+            margin-right: 12px;
+        }
+    }
+    a{
+        font-size: 18px;
+        color: $color-secondary;
+        border-bottom: 3px solid transparent;
+        padding: 5px 20px;
+        &:hover{
+            border-bottom: 3px solid $color-secondary;
+        }
+    }
+}
+.ham-dropDown{
+    display: none;
+    text-align: center;
+    @include mobile{
+        &.show{
+            display: block;
+        }
+    }
+    
+    li{
+        border: 1px solid $color-primary;
+        &:nth-child(1), &:nth-child(2), &:nth-child(3){
+            border-bottom: none;
+        }
+    }
+    a{
+        color: $color-primary;
+        padding: 8px 0;
+        &:hover{
+            color: white;
+            background-color: $color-primary;
+        }
+    }
+}
+
+// footer
+footer{
+    color: white;
+    background-color: #555E50;
+    p{
+        text-align: center;
+    }
+    @include mobile{
+       font-size: 12px;
+    }
+}

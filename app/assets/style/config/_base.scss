@@ -1,0 +1,18 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    //outline: 1px solid pink;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+img{
+	display: block;
+  	max-width: 100%;
+  	height: auto;
+    object-fit: cover; //圖片不變形
+}
+a{
+    display: block;
+    text-decoration: none;
+}
